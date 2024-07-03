@@ -9,8 +9,8 @@ interface ChatHeaderProps {
 }
 export const ChatHeader = (props: ChatHeaderProps) => {
   return (
-    <div className="md:grid md:grid-cols-3 items-center gap-4  py-4 px-2 sm:flex sm:flex-row ">
-      <div className="avatar-stack flex md:justify-self-start sm:justify-self-center ">
+    <div className="sm:grid grid-cols-3  xs:grid grid-row-3 items-center gap-4  py-4 px-2 ">
+      <div className="avatar-stack flex sm:justify-self-start xs:justify-self-center ">
         {props.members.map((member, index) => (
           <img
             key={member.id}
